@@ -47,12 +47,11 @@ APP_KEY=
 APP_DEBUG=true
 APP_URL=http://localhost:8000
 
-DB_CONNECTION=pgsql
-DB_HOST=127.0.0.1
-DB_PORT=5432
-DB_DATABASE=taskmanager_db
-DB_USERNAME=postgres
-DB_PASSWORD=secret
+DB_CONNECTION=mysql
+DB_DATABASE=task_manager
+DB_USERNAME=root
+DB_PASSWORD=
+DB_PORT=3306
 
 Note: For MySQL, set DB_CONNECTION=mysql and update port/credentials accordingly.
 
@@ -83,7 +82,7 @@ npm install
 
 Development mode:
 
-pnpm run dev
+npm run dev
 
 Open browser:
 
