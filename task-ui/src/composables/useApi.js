@@ -1,7 +1,8 @@
 import axios from 'axios'
 
 // ─── Change this to your Railway URL when deployed ───────────────
-const BASE_URL = '/api'   // uses Vite proxy in dev → http://127.0.0.1:8000/api
+//const BASE_URL = '/api'   // uses Vite proxy in dev → http://127.0.0.1:8000/api
+const BASE_URL = 'https://task-manager-api-zr0h.onrender.com/api'
 // const BASE_URL = 'https://your-app.railway.app/api'  // production
 // ─────────────────────────────────────────────────────────────────
 
