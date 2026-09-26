@@ -35,6 +35,7 @@
         :style="{ animationDelay: `${i * 40}ms` }"
         @advance="$emit('advance', task)"
         @delete="onDelete(task)"
+        @edit="$emit('edit', task)"
       />
     </div>
   </div>
@@ -49,7 +50,7 @@ defineProps({
   activeFilter: { type: String,  default: '' },
 })
 
-const emit = defineEmits(['filter', 'advance', 'delete'])
+const emit = defineEmits(['filter', 'advance', 'delete', 'edit'])
 
 const FILTERS = [
   { label: 'All',         value: '' },
